@@ -1,7 +1,7 @@
 # Node.js 依赖包 忽略node_models文件夹
 node_modules/
 
-# 环境变量文件（可能包含密码、API密钥）
+# 环境变量文件
 .env
 
 # 日志文件
