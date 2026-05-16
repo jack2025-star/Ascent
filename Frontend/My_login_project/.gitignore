@@ -23,7 +23,7 @@ Thumbs.db        # Windows 系统
 .idea/           # WebStorm
 .vscode/         # VS Code
 *.swp            # Vim 临时文件
-./lingma
+.lingma/
 
 # 依赖锁定文件
 # package-lock.json
