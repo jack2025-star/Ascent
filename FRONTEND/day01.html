@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head 页面元数据 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML基础</title>
+</head>
+
+<body>
+    <!-- body 页面主体 -->
+    <h1>你好，世界！</h1>
+    <p>这是一个段落</p>
+    <hr>
+
+    <strong>这是加粗的文本</strong>
+    <br>
+    <em>这是斜体的文本</em>
+    <br>
+
+    <!-- 超链接 -->
+    <a href="https://baidu.com">点击跳转</a>
+    <hr>
+    <a href="#">关于我们</a>
+    <hr>
+
+    <a href="#section1">跳转到锚点</a>
+
+    <hr>
+
+    <!-- 图片 -->
+    <img src="photo.jpg" alt="显示不出来
+    " width="300">
+    <!-- alt 是图片加载失败时显示的文字 -->
+
+    <!-- 无序列表 -->
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Excel</li>
+    </ul>
+    <hr>
+    <!-- 有序列表 -->
+    <ol>
+        <li>第一步：收集数据</li>
+        <li>第二步：清洗数据</li>
+        <li>第三步：分析数据</li>
+    </ol>
+
+    <hr>
+
+    <!-- 表格 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>部门</th>
+                <th>销售额</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>销售部</td>
+                <td>58000</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>市场部</td>
+                <td>42000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- 表单 -->
+    <form action="/submit" method="POST">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="请输入姓名">
+
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email">
+
+        <label for="dept">部门：</label>
+        <select id="dept" name="dept">
+            <option value="sales">销售部</option>
+            <option value="market">市场部</option>
+        </select>
+
+        <button type="submit">提交</button>
+    </form>
+
+    <hr>
+
+    <!-- 语义化标签 -->
+    <header>页面头部</header>
+    <nav>导航栏</nav>
+    <main>主要内容</main>
+    <section>章节</section>
+    <article>文章</article>
+    <aside>侧边栏</aside>
+    <footer>页面底部</footer>
+
+    <hr>
+
+    <!-- 块级元素：各占一行 -->
+    <p>段落1</p>
+    <p>段落2</p>
+
+    <!-- 行内元素：在同一行 -->
+    <p>这是<strong>加粗</strong>和<em>斜体</em></p>
+    <hr>
+
+    <!-- 练习1：创建一个简单的个人介绍页面 -->
+    <h1>小明的个人主页</h1>
+    <p>我是<strong>数据科学家</strong>，擅长 Python 和 SQL。</p>
+
+    <h2>技能：</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Excel</li>
+    </ul>
+
+    <h2>联系方式</h2>
+    <p>邮箱：xiaoming@example.com</p>
+
+    <hr>
+
+    <!-- 文本、密码、邮箱 -->
+    <input type="text" placeholder="文本">
+    <input type="password" placeholder="密码">
+    <input type="email" placeholder="邮箱">
+    <br>
+
+    <!-- 数字、日期、颜色 -->
+    <input type="number" min="0" max="100">
+    <input type="date">
+    <input type="color">
+    <br>
+    <hr>
+
+    <!-- 滑块、文件 -->
+    <input type="range" min="0" max="100">
+    <input type="file">
+    <br>
+    <hr>
+
+    <!-- 多行文本 -->
+    <textarea rows="3" placeholder="多行输入"></textarea>
+
+    <hr>
+
+    <form>
+        <!-- 必填 -->
+        <input type="text" required placeholder="必填">
+        <br>
+
+        <!-- 邮箱格式自动校验 -->
+        <input type="email" required placeholder="邮箱">
+        <br>
+
+        <!-- 数字范围 -->
+        <input type="number" min="18" max="60" placeholder="18-60">
+        <br>
+
+        <!-- 正则匹配 -->
+        <input type="text" pattern="[0-9]{11}" placeholder="11位手机号">
+        <hr>
+
+        <button type="submit">提交</button>
+    </form>
+
+    <hr>
+    <!-- checkbox：多选 -->
+    <label><input type="checkbox" name="hobby"> 编程</label>
+    <label><input type="checkbox" name="hobby"> 篮球</label>
+    <label><input type="checkbox" name="hobby"> 音乐</label>
+    <hr>
+
+    <!-- radio：单选（同名互斥） -->
+    <label><input type="radio" name="gender"> 男</label>
+    <label><input type="radio" name="gender"> 女</label>
+
+    <hr>
+    <!-- 音频播放器 -->
+    <audio controls src="music.mp3"></audio>
+    <hr>
+
+    <!-- 视频播放器 -->
+    <video controls width="320" src="video.mp4"></video>
+
+</body>
